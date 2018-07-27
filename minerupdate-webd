@@ -1,0 +1,47 @@
+This script has been tested on Ubuntu 16.04 LTS and 18.04 and is an update script for those who have trouble with argon2 error and npm.
+
+#!/bin/bash
+set -xe
+
+# update env and install minimum required dependencies
+sudo apt update
+sudo apt upgrade -y
+sudo apt install git python build-essential -y
+
+# install nvm
+wget -qO- \
+    https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+
+# export nvm required env
+export NVM_DIR="${HOME}/.nvm"
+# this loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# install node long term version
+nvm install --lts
+
+# hack to make the node instalation persistent between sesssions
+nvm install --lts
+
+git clone https://github.com/WebDollar/Node-WebDollar
+cd Node-WebDollar/
+npm install
+
+#  Installing modules
+
+Installing Argon2 node.js
+sudo apt install linuxbrew-wrapper
+
+Next type:
+
+sudo apt-get install clang
+npm install -g node-gyp
+
+Last process type:
+
+env CXX=g++-5 npm install
+env CXX=g++-5 npm install argon2
+
+#Start Menu
+
+npm run commands
