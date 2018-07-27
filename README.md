@@ -1,5 +1,5 @@
-# criptoexchangeplatform
-WEBD, BTC and other cripto in task
+# exchangeminingplatform
+WEBD
 
 WORK IN PROGRESS:
 
