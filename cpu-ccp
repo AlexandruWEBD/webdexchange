@@ -1,0 +1,34 @@
+cd  Node-WebDollar
+
+rm -rf argon2
+
+git clone https://github.com/WebDollar/argon2
+
+cd argon2/
+
+apt-get install -y cmake
+
+cmake -DCMAKE_BUILD_TYPE=Release .
+
+make
+
+cd ..
+
+cp -a argon2/* dist_bundle/CPU/
+
+npm install
+
+Edit parameters for the new cpu-C++ miner -> nano -w src/consts/const_global.js
+
+Search and find this line:
+
+## TYPE: "cpu-cpp", //cpu-cpp
+## CPU_MAX: 8, //for CPU-CPP use, 2x or even 3x threads
+
+Next Step :
+
+ ctrl-x, y, enter then reboot the server
+ 
+ After reboot type:
+ 
+npm run commands
