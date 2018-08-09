@@ -1,0 +1,39 @@
+git reset --hard d4ad31ef835250fea50e69b79173ddf9e8508fc2
+
+
+npm install
+
+
+rm -fr argon2
+
+
+git clone https://github.com/WebDollar/argon2 
+
+cd argon2
+
+git reset --hard 7826c3f08495af2c1b9092e297b89fc81cfc593d 
+
+cmake -DCMAKE_BUILD_TYPE=Release
+
+ make 
+ 
+ cd .. 
+ 
+ cp -a argon2/* dist_bundle/CPU/
+ 
+ npm install
+
+Edit parameters for the new cpu-C++ miner -> nano -w src/consts/const_global.js
+
+Search and find this line:
+
+## TYPE: "cpu-cpp", //cpu-cpp
+## CPU_MAX: 8, //for CPU-CPP use, 2x or even 3x threads
+
+Next Step :
+
+ ctrl-x, y, enter then reboot the server
+ 
+ After reboot type:
+ 
+npm run commands
