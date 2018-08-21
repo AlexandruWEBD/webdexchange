@@ -22,7 +22,7 @@ All visible coins should be appear in the Wallet. You shoud create default coin 
 
 Donate to help on infrastructure.
 
-BTC: 1LgY1sZVQL1cPyf5LDj3rSepKUCdA1Jzey
+BTC: 1Q6HucUDiffEA33AXouVzGWhdkT4KGGMhR
 
 BCH: qppuxt44a2jwsaz7n9hv97u2mxxca3ws8qup0as9tz
 
