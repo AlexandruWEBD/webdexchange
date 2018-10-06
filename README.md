@@ -22,10 +22,14 @@ All visible coins should be appear in the Wallet. You shoud create default coin 
 
 Donate to help on infrastructure.
 
-BTC: 1Q6HucUDiffEA33AXouVzGWhdkT4KGGMhR
+BTC: 3JfUFziLermyubNX2rFm2975Ngv8PxHrFQ
 
 BCH: qppuxt44a2jwsaz7n9hv97u2mxxca3ws8qup0as9tz
 
 ETH: 0x9FaaCE9d33aBFFbEcc48F52a20ECcd01bC84a420
 
 WEBD: WEBD$gAN#6nVfXEtkrjS3fvD$1naPoQ6H4jye5b$
+
+litecoin:MBT84jsFfd5TPxnBbVQw12Jx4N2oeUTWiW
+
+XRP rCoinaUERUrXb1aA7dJu8qRcmvPNiKS3d
